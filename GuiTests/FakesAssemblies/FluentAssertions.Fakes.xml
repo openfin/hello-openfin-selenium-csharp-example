@@ -1,0 +1,1457 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentAssertions.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FluentAssertions.Common.Fakes.ShimProvidePlatformServices">
+            <summary>Shim type of FluentAssertions.Common.ProvidePlatformServices</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.#ctor(FluentAssertions.Common.ProvidePlatformServices)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.AllInstances.ConfigurationStoreGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_ConfigurationStore()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.AllInstances.FormattersGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Formatters()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.AllInstances.ReflectorGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Reflector()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.AllInstances.ThrowGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Throw()</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.Bind(FluentAssertions.Common.IProvidePlatformServices)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.ConfigurationStoreGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_ConfigurationStore()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.Constructor">
+            <summary>Sets the shim of ProvidePlatformServices.ProvidePlatformServices()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.FormattersGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Formatters()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.ReflectorGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Reflector()</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.ShimProvidePlatformServices.ThrowGet">
+            <summary>Sets the shim of ProvidePlatformServices.get_Throw()</summary>
+        </member>
+        <member name="T:FluentAssertions.Common.Fakes.StubProvidePlatformServices">
+            <summary>Stub type of FluentAssertions.Common.ProvidePlatformServices</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.StubProvidePlatformServices.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.StubProvidePlatformServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Common.Fakes.StubProvidePlatformServices.InitializeStub">
+            <summary>Initializes a new instance of type StubProvidePlatformServices</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.StubProvidePlatformServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Common.Fakes.StubProvidePlatformServices.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Execution.Fakes.ShimAssertionFailedException">
+            <summary>Shim type of FluentAssertions.Execution.AssertionFailedException</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.#ctor(FluentAssertions.Execution.AssertionFailedException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of AssertionFailedException.AssertionFailedException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.ShimAssertionFailedException.ConstructorString">
+            <summary>Sets the shim of AssertionFailedException.AssertionFailedException(String message)</summary>
+        </member>
+        <member name="T:FluentAssertions.Execution.Fakes.StubAssertionFailedException">
+            <summary>Stub type of FluentAssertions.Execution.AssertionFailedException</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAssertionFailedException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAssertionFailedException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.InitializeStub">
+            <summary>Initializes a new instance of type StubAssertionFailedException</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Execution.Fakes.StubAssertionFailedException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:FluentAssertions.Execution.Fakes.StubAssertionFailedException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:FluentAssertions.Execution.Fakes.StubAssertionFailedException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:FluentAssertions.Fakes.ShimAssertionExtensions">
+            <summary>Shim type of FluentAssertions.AssertionExtensions</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.AsOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,``0})">
+            <summary>Sets the shim of AssertionExtensions.As(Object subject)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.EnumeratingFuncOfIEnumerable">
+            <summary>Sets the shim of AssertionExtensions.Enumerating(Func`1&lt;IEnumerable&gt; enumerable)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.EnumeratingOf1FuncOfIEnumerableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Collections.Generic.IEnumerable{``0}},System.Action})">
+            <summary>Sets the shim of AssertionExtensions.Enumerating(Func`1&lt;IEnumerable`1&lt;!!0&gt;&gt; enumerable)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ExecutionTimeAction">
+            <summary>Sets the shim of AssertionExtensions.ExecutionTime(Action action)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ExecutionTimeOfOf1M0ExpressionOfActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Linq.Expressions.Expression{System.Action{``0}},FluentAssertions.Specialized.MemberExecutionTimeAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.ExecutionTimeOf(!!0 subject, Expression`1&lt;Action`1&lt;!!0&gt;&gt; action)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ForceEnumerationFuncOfIEnumerable">
+            <summary>Sets the shim of AssertionExtensions.ForceEnumeration(Func`1&lt;IEnumerable&gt; enumerable)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.InvokingOf1M0ActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Action{``0},System.Action})">
+            <summary>Sets the shim of AssertionExtensions.Invoking(!!0 subject, Action`1&lt;!!0&gt; action)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.MonitorEventsObject">
+            <summary>Sets the shim of AssertionExtensions.MonitorEvents(Object eventSource)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.MonitorEventsOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,FluentAssertions.Events.IEventMonitor})">
+            <summary>Sets the shim of AssertionExtensions.MonitorEvents(Object eventSource)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.RepeatAsManyAsIteratorOf1ObjectIEnumerableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,System.Collections.Generic.IEnumerable{``0},System.Collections.IEnumerable})">
+            <summary>Sets the shim of AssertionExtensions.RepeatAsManyAsIterator(Object value, IEnumerable`1&lt;!!0&gt; enumerable)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.RepeatAsManyAsOf1ObjectIEnumerableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,System.Collections.Generic.IEnumerable{``0},System.Collections.IEnumerable})">
+            <summary>Sets the shim of AssertionExtensions.RepeatAsManyAs(Object value, IEnumerable`1&lt;!!0&gt; enumerable)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldAllBeEquivalentToOf1IEnumerableOfM0IEnumerableFuncOfEquivalencyAssertionOptionsOfM0EquivalencyAssertionOptionsOfM0StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Collections.Generic.IEnumerable{``0},System.Collections.IEnumerable,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldAllBeEquivalentTo(IEnumerable`1&lt;!!0&gt; subject, IEnumerable expectation, Func`2&lt;EquivalencyAssertionOptions`1&lt;!!0&gt;,EquivalencyAssertionOptions`1&lt;!!0&gt;&gt; config, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldAllBeEquivalentToOf1IEnumerableOfM0IEnumerableStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Collections.Generic.IEnumerable{``0},System.Collections.IEnumerable,System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldAllBeEquivalentTo(IEnumerable`1&lt;!!0&gt; subject, IEnumerable expectation, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldAllBeEquivalentToOf1IEnumerableOfM0ObjectFuncOfEquivalencyAssertionOptionsOfM0EquivalencyAssertionOptionsOfM0StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Collections.Generic.IEnumerable{``0},System.Object,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldAllBeEquivalentTo(IEnumerable`1&lt;!!0&gt; subject, Object expectation, Func`2&lt;EquivalencyAssertionOptions`1&lt;!!0&gt;,EquivalencyAssertionOptions`1&lt;!!0&gt;&gt; config, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldAllBeEquivalentToOf1IEnumerableOfM0ObjectStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Collections.Generic.IEnumerable{``0},System.Object,System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldAllBeEquivalentTo(IEnumerable`1&lt;!!0&gt; subject, Object expectation, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldAssembly">
+            <summary>Sets the shim of AssertionExtensions.Should(Assembly assembly)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldBeEquivalentToOf1M0ObjectFuncOfEquivalencyAssertionOptionsOfM0EquivalencyAssertionOptionsOfM0StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Object,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldBeEquivalentTo(!!0 subject, Object expectation, Func`2&lt;EquivalencyAssertionOptions`1&lt;!!0&gt;,EquivalencyAssertionOptions`1&lt;!!0&gt;&gt; config, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldBeEquivalentToOf1M0ObjectStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Object,System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldBeEquivalentTo(!!0 subject, Object expectation, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldBoolean">
+            <summary>Sets the shim of AssertionExtensions.Should(Boolean actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldByte">
+            <summary>Sets the shim of AssertionExtensions.Should(Byte actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldConstructorInfo">
+            <summary>Sets the shim of AssertionExtensions.Should(ConstructorInfo constructorInfo)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldDateTime">
+            <summary>Sets the shim of AssertionExtensions.Should(DateTime actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldDateTimeOffset">
+            <summary>Sets the shim of AssertionExtensions.Should(DateTimeOffset actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldDecimal">
+            <summary>Sets the shim of AssertionExtensions.Should(Decimal actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldDouble">
+            <summary>Sets the shim of AssertionExtensions.Should(Double actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldGuid">
+            <summary>Sets the shim of AssertionExtensions.Should(Guid actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldIEnumerable">
+            <summary>Sets the shim of AssertionExtensions.Should(IEnumerable actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldIEnumerableOfString">
+            <summary>Sets the shim of AssertionExtensions.Should(IEnumerable`1&lt;String&gt; this)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldInt16">
+            <summary>Sets the shim of AssertionExtensions.Should(Int16 actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldInt32">
+            <summary>Sets the shim of AssertionExtensions.Should(Int32 actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldInt64">
+            <summary>Sets the shim of AssertionExtensions.Should(Int64 actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldMethodInfo">
+            <summary>Sets the shim of AssertionExtensions.Should(MethodInfo methodInfo)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldMethodInfoSelector">
+            <summary>Sets the shim of AssertionExtensions.Should(MethodInfoSelector methodSelector)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNotThrowActionStringObjectArray">
+            <summary>Sets the shim of AssertionExtensions.ShouldNotThrow(Action action, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNotThrowFuncOfTaskStringObjectArray">
+            <summary>Sets the shim of AssertionExtensions.ShouldNotThrow(Func`1&lt;Task&gt; asyncAction, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNotThrowOf1ActionStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Action,System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldNotThrow(Action action, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNotThrowOf1FuncOfTaskStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Func{System.Threading.Tasks.Task},System.String,System.Object[]})">
+            <summary>Sets the shim of AssertionExtensions.ShouldNotThrow(Func`1&lt;Task&gt; asyncAction, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfBoolean">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Boolean&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfByte">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Byte&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfDateTime">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;DateTime&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfDateTimeOffset">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;DateTimeOffset&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfDecimal">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Decimal&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfDouble">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Double&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfGuid">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Guid&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfInt16">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Int16&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfInt32">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Int32&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfInt64">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Int64&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfSingle">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;Single&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldNullableOfTimeSpan">
+            <summary>Sets the shim of AssertionExtensions.Should(Nullable`1&lt;TimeSpan&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldObject">
+            <summary>Sets the shim of AssertionExtensions.Should(Object actualValue)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldOf1IComparableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IComparable{``0},FluentAssertions.Numeric.ComparableTypeAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.Should(IComparable`1&lt;!!0&gt; comparableValue)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldOf1IEnumerableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Collections.Generic.IEnumerable{``0},FluentAssertions.Collections.GenericCollectionAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.Should(IEnumerable`1&lt;!!0&gt; actualValue)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldOf2IDictionaryOfM0M1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Collections.Generic.IDictionary{``0,``1},FluentAssertions.Collections.GenericDictionaryAssertions{``0,``1}})">
+            <summary>Sets the shim of AssertionExtensions.Should(IDictionary`2&lt;!!0,!!1&gt; actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldPropertyInfo">
+            <summary>Sets the shim of AssertionExtensions.Should(PropertyInfo propertyInfo)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldPropertyInfoSelector">
+            <summary>Sets the shim of AssertionExtensions.Should(PropertyInfoSelector propertyInfoSelector)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldSingle">
+            <summary>Sets the shim of AssertionExtensions.Should(Single actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldString">
+            <summary>Sets the shim of AssertionExtensions.Should(String actualValue)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldThrowExactlyOf1ActionStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Action,System.String,System.Object[],FluentAssertions.Specialized.ExceptionAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.ShouldThrowExactly(Action action, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldThrowExactlyOf1FuncOfTaskStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Threading.Tasks.Task},System.String,System.Object[],FluentAssertions.Specialized.ExceptionAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.ShouldThrowExactly(Func`1&lt;Task&gt; asyncAction, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldThrowOf1ActionStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Action,System.String,System.Object[],FluentAssertions.Specialized.ExceptionAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.ShouldThrow(Action action, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldThrowOf1FuncOfTaskStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Threading.Tasks.Task},System.String,System.Object[],FluentAssertions.Specialized.ExceptionAssertions{``0}})">
+            <summary>Sets the shim of AssertionExtensions.ShouldThrow(Func`1&lt;Task&gt; asyncAction, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldTimeSpan">
+            <summary>Sets the shim of AssertionExtensions.Should(TimeSpan actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldType">
+            <summary>Sets the shim of AssertionExtensions.Should(Type subject)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldTypeSelector">
+            <summary>Sets the shim of AssertionExtensions.Should(TypeSelector typeSelector)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldXAttribute">
+            <summary>Sets the shim of AssertionExtensions.Should(XAttribute actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldXDocument">
+            <summary>Sets the shim of AssertionExtensions.Should(XDocument actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.ShouldXElement">
+            <summary>Sets the shim of AssertionExtensions.Should(XElement actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimAssertionExtensions.StaticConstructor">
+            <summary>Sets the shim of AssertionExtensions.AssertionExtensions()</summary>
+        </member>
+        <member name="T:FluentAssertions.Fakes.ShimEventSourceExtensions">
+            <summary>Shim type of FluentAssertions.EventSourceExtensions</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimEventSourceExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimEventSourceExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimEventSourceExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimEventSourceExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimEventSourceExtensions.ShouldNotRaiseObjectString">
+            <summary>Sets the shim of EventSourceExtensions.ShouldNotRaise(Object eventSource, String eventName)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimEventSourceExtensions.ShouldNotRaiseObjectStringStringObjectArray">
+            <summary>Sets the shim of EventSourceExtensions.ShouldNotRaise(Object eventSource, String eventName, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimEventSourceExtensions.ShouldRaiseObjectString">
+            <summary>Sets the shim of EventSourceExtensions.ShouldRaise(Object eventSource, String eventName)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimEventSourceExtensions.ShouldRaiseObjectStringStringObjectArray">
+            <summary>Sets the shim of EventSourceExtensions.ShouldRaise(Object eventSource, String eventName, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Fakes.ShimObjectAssertionsExtensions">
+            <summary>Shim type of FluentAssertions.ObjectAssertionsExtensions</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BeBinarySerializableObjectAssertionsStringObjectArray">
+            <summary>Sets the shim of ObjectAssertionsExtensions.BeBinarySerializable(ObjectAssertions assertions, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BeBinarySerializableOf1ObjectAssertionsFuncOfEquivalencyAssertionOptionsOfM0EquivalencyAssertionOptionsOfM0StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{FluentAssertions.Primitives.ObjectAssertions,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[],FluentAssertions.AndConstraint{FluentAssertions.Primitives.ObjectAssertions}})">
+            <summary>Sets the shim of ObjectAssertionsExtensions.BeBinarySerializable(ObjectAssertions assertions, Func`2&lt;EquivalencyAssertionOptions`1&lt;!!0&gt;,EquivalencyAssertionOptions`1&lt;!!0&gt;&gt; options, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BeDataContractSerializableObjectAssertionsStringObjectArray">
+            <summary>Sets the shim of ObjectAssertionsExtensions.BeDataContractSerializable(ObjectAssertions assertions, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BeDataContractSerializableOf1ObjectAssertionsStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{FluentAssertions.Primitives.ObjectAssertions,System.String,System.Object[],FluentAssertions.AndConstraint{FluentAssertions.Primitives.ObjectAssertions}})">
+            <summary>Sets the shim of ObjectAssertionsExtensions.BeDataContractSerializable(ObjectAssertions assertions, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BeXmlSerializableObjectAssertionsStringObjectArray">
+            <summary>Sets the shim of ObjectAssertionsExtensions.BeXmlSerializable(ObjectAssertions assertions, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.CreateCloneUsingBinarySerializerObject">
+            <summary>Sets the shim of ObjectAssertionsExtensions.CreateCloneUsingBinarySerializer(Object subject)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.CreateCloneUsingDataContractSerializerObject">
+            <summary>Sets the shim of ObjectAssertionsExtensions.CreateCloneUsingDataContractSerializer(Object subject)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimObjectAssertionsExtensions.CreateCloneUsingXmlSerializerObject">
+            <summary>Sets the shim of ObjectAssertionsExtensions.CreateCloneUsingXmlSerializer(Object subject)</summary>
+        </member>
+        <member name="T:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions">
+            <summary>Shim type of FluentAssertions.PropertyChangedSourceExtensions</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.GetAffectedPropertyNameRecordedEvent">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.GetAffectedPropertyName(RecordedEvent event)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.ShouldNotRaisePropertyChangeForOf1M0ExpressionOfFuncOfM0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}})">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.ShouldNotRaisePropertyChangeFor(!!0 eventSource, Expression`1&lt;Func`2&lt;!!0,Object&gt;&gt; propertyExpression)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.ShouldNotRaisePropertyChangeForOf1M0ExpressionOfFuncOfM0ObjectStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String,System.Object[]})">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.ShouldNotRaisePropertyChangeFor(!!0 eventSource, Expression`1&lt;Func`2&lt;!!0,Object&gt;&gt; propertyExpression, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.ShouldRaisePropertyChangeForOf1M0ExpressionOfFuncOfM0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},FluentAssertions.Events.IEventRecorder})">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.ShouldRaisePropertyChangeFor(!!0 eventSource, Expression`1&lt;Func`2&lt;!!0,Object&gt;&gt; propertyExpression)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.ShouldRaisePropertyChangeForOf1M0ExpressionOfFuncOfM0ObjectStringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String,System.Object[],FluentAssertions.Events.IEventRecorder})">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.ShouldRaisePropertyChangeFor(!!0 eventSource, Expression`1&lt;Func`2&lt;!!0,Object&gt;&gt; propertyExpression, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.WithArgsOf1IEventRecorderExpressionOfFuncOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{FluentAssertions.Events.IEventRecorder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},FluentAssertions.Events.IEventRecorder})">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.WithArgs(IEventRecorder eventRecorder, Expression`1&lt;Func`2&lt;!!0,Boolean&gt;&gt; predicate)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimPropertyChangedSourceExtensions.WithSenderIEventRecorderObject">
+            <summary>Sets the shim of PropertyChangedSourceExtensions.WithSender(IEventRecorder eventRecorder, Object expectedSender)</summary>
+        </member>
+        <member name="T:FluentAssertions.Fakes.ShimXmlAssertionExtensions">
+            <summary>Shim type of FluentAssertions.XmlAssertionExtensions</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimXmlAssertionExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimXmlAssertionExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Fakes.ShimXmlAssertionExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimXmlAssertionExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimXmlAssertionExtensions.ShouldXmlElement">
+            <summary>Sets the shim of XmlAssertionExtensions.Should(XmlElement actualValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Fakes.ShimXmlAssertionExtensions.ShouldXmlNode">
+            <summary>Sets the shim of XmlAssertionExtensions.Should(XmlNode actualValue)</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter">
+            <summary>Shim type of FluentAssertions.Formatting.XAttributeValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.#ctor(FluentAssertions.Formatting.XAttributeValueFormatter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.AllInstances.CanHandleObject">
+            <summary>Sets the shim of XAttributeValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.AllInstances.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XAttributeValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.Bind(FluentAssertions.Formatting.IValueFormatter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.CanHandleObject">
+            <summary>Sets the shim of XAttributeValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.Constructor">
+            <summary>Sets the shim of XAttributeValueFormatter.XAttributeValueFormatter()</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXAttributeValueFormatter.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XAttributeValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter">
+            <summary>Shim type of FluentAssertions.Formatting.XDocumentValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.#ctor(FluentAssertions.Formatting.XDocumentValueFormatter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.AllInstances.CanHandleObject">
+            <summary>Sets the shim of XDocumentValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.AllInstances.FormatDocumentWithRootXDocument">
+            <summary>Sets the shim of XDocumentValueFormatter.FormatDocumentWithRoot(XDocument document)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.AllInstances.FormatDocumentWithoutRoot">
+            <summary>Sets the shim of XDocumentValueFormatter.FormatDocumentWithoutRoot()</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.AllInstances.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XDocumentValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.Bind(FluentAssertions.Formatting.IValueFormatter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.CanHandleObject">
+            <summary>Sets the shim of XDocumentValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.Constructor">
+            <summary>Sets the shim of XDocumentValueFormatter.XDocumentValueFormatter()</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.FormatDocumentWithRootXDocument">
+            <summary>Sets the shim of XDocumentValueFormatter.FormatDocumentWithRoot(XDocument document)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.FormatDocumentWithoutRoot">
+            <summary>Sets the shim of XDocumentValueFormatter.FormatDocumentWithoutRoot()</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXDocumentValueFormatter.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XDocumentValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter">
+            <summary>Shim type of FluentAssertions.Formatting.XElementValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.#ctor(FluentAssertions.Formatting.XElementValueFormatter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.AllInstances.CanHandleObject">
+            <summary>Sets the shim of XElementValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.AllInstances.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XElementValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.Bind(FluentAssertions.Formatting.IValueFormatter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.CanHandleObject">
+            <summary>Sets the shim of XElementValueFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.Constructor">
+            <summary>Sets the shim of XElementValueFormatter.XElementValueFormatter()</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.FormatElementWithChildrenXElement">
+            <summary>Sets the shim of XElementValueFormatter.FormatElementWithChildren(XElement element)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.FormatElementWithoutChildrenXElement">
+            <summary>Sets the shim of XElementValueFormatter.FormatElementWithoutChildren(XElement element)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.SplitIntoSeparateLinesXElement">
+            <summary>Sets the shim of XElementValueFormatter.SplitIntoSeparateLines(XElement element)</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.ShimXElementValueFormatter.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XElementValueFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter">
+            <summary>Stub type of FluentAssertions.Formatting.XAttributeValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter.InitializeStub">
+            <summary>Initializes a new instance of type StubXAttributeValueFormatter</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXAttributeValueFormatter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter">
+            <summary>Stub type of FluentAssertions.Formatting.XDocumentValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter.InitializeStub">
+            <summary>Initializes a new instance of type StubXDocumentValueFormatter</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXDocumentValueFormatter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter">
+            <summary>Stub type of FluentAssertions.Formatting.XElementValueFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter.InitializeStub">
+            <summary>Initializes a new instance of type StubXElementValueFormatter</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Formatting.Fakes.StubXElementValueFormatter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions">
+            <summary>Shim type of FluentAssertions.Reflection.AssemblyAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.#ctor(FluentAssertions.Reflection.AssemblyAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.DefineTypeStringStringStringObjectArray">
+            <summary>Sets the shim of AssemblyAssertions.DefineType(String namespace, String name, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.NotReferenceAssembly">
+            <summary>Sets the shim of AssemblyAssertions.NotReference(Assembly assembly)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.NotReferenceAssemblyStringStringArray">
+            <summary>Sets the shim of AssemblyAssertions.NotReference(Assembly assembly, String because, String[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.ReferenceAssembly">
+            <summary>Sets the shim of AssemblyAssertions.Reference(Assembly assembly)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.ReferenceAssemblyStringStringArray">
+            <summary>Sets the shim of AssemblyAssertions.Reference(Assembly assembly, String because, String[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.SubjectGet">
+            <summary>Sets the shim of AssemblyAssertions.get_Subject()</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.AllInstances.SubjectSetAssembly">
+            <summary>Sets the shim of AssemblyAssertions.set_Subject(Assembly value)</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.ConstructorAssembly">
+            <summary>Sets the shim of AssemblyAssertions.AssemblyAssertions(Assembly assembly)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.DefineTypeStringStringStringObjectArray">
+            <summary>Sets the shim of AssemblyAssertions.DefineType(String namespace, String name, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.NotReferenceAssembly">
+            <summary>Sets the shim of AssemblyAssertions.NotReference(Assembly assembly)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.NotReferenceAssemblyStringStringArray">
+            <summary>Sets the shim of AssemblyAssertions.NotReference(Assembly assembly, String because, String[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.ReferenceAssembly">
+            <summary>Sets the shim of AssemblyAssertions.Reference(Assembly assembly)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.ReferenceAssemblyStringStringArray">
+            <summary>Sets the shim of AssemblyAssertions.Reference(Assembly assembly, String because, String[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.SubjectGet">
+            <summary>Sets the shim of AssemblyAssertions.get_Subject()</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.ShimAssemblyAssertions.SubjectSetAssembly">
+            <summary>Sets the shim of AssemblyAssertions.set_Subject(Assembly value)</summary>
+        </member>
+        <member name="T:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions">
+            <summary>Stub type of FluentAssertions.Reflection.AssemblyAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions.#ctor(System.Reflection.Assembly)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions.InitializeStub">
+            <summary>Initializes a new instance of type StubAssemblyAssertions</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Reflection.Fakes.StubAssemblyAssertions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions">
+            <summary>Shim type of FluentAssertions.Specialized.ExecutionTimeAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.#ctor(FluentAssertions.Specialized.ExecutionTimeAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.ActionDescriptionGet">
+            <summary>Sets the shim of ExecutionTimeAssertions.get_ActionDescription()</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.ActionDescriptionSetString">
+            <summary>Sets the shim of ExecutionTimeAssertions.set_ActionDescription(String value)</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.AllInstances.ActionDescriptionGet">
+            <summary>Sets the shim of ExecutionTimeAssertions.get_ActionDescription()</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.AllInstances.ActionDescriptionSetString">
+            <summary>Sets the shim of ExecutionTimeAssertions.set_ActionDescription(String value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.AllInstances.ShouldNotExceedTimeSpanStringObjectArray">
+            <summary>Sets the shim of ExecutionTimeAssertions.ShouldNotExceed(TimeSpan maxDuration, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.ConstructorAction">
+            <summary>Sets the shim of ExecutionTimeAssertions.ExecutionTimeAssertions(Action action)</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimExecutionTimeAssertions.ShouldNotExceedTimeSpanStringObjectArray">
+            <summary>Sets the shim of ExecutionTimeAssertions.ShouldNotExceed(TimeSpan maxDuration, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1">
+            <summary>Shim type of FluentAssertions.Specialized.MemberExecutionTimeAssertions`1</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.#ctor(FluentAssertions.Specialized.MemberExecutionTimeAssertions{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.ShimMemberExecutionTimeAssertions`1.ConstructorT0ExpressionOfActionOfT0">
+            <summary>Sets the shim of MemberExecutionTimeAssertions`1.MemberExecutionTimeAssertions`1(!0 subject, Expression`1&lt;Action`1&lt;!0&gt;&gt; action)</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions">
+            <summary>Stub type of FluentAssertions.Specialized.ExecutionTimeAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions.#ctor(System.Action)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions.InitializeStub">
+            <summary>Initializes a new instance of type StubExecutionTimeAssertions</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubExecutionTimeAssertions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1">
+            <summary>Stub type of FluentAssertions.Specialized.MemberExecutionTimeAssertions`1</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1.#ctor(`0,System.Linq.Expressions.Expression{System.Action{`0}})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1.InitializeStub">
+            <summary>Initializes a new instance of type StubMemberExecutionTimeAssertions</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Specialized.Fakes.StubMemberExecutionTimeAssertions`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions">
+            <summary>Shim type of FluentAssertions.Xml.XAttributeAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.#ctor(FluentAssertions.Xml.XAttributeAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.BeXAttribute">
+            <summary>Sets the shim of XAttributeAssertions.Be(XAttribute expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.BeXAttributeStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.Be(XAttribute expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.ContextGet">
+            <summary>Sets the shim of XAttributeAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.HaveValueString">
+            <summary>Sets the shim of XAttributeAssertions.HaveValue(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.HaveValueStringStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.HaveValue(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.NotBeXAttribute">
+            <summary>Sets the shim of XAttributeAssertions.NotBe(XAttribute unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.AllInstances.NotBeXAttributeStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.NotBe(XAttribute unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.BeXAttribute">
+            <summary>Sets the shim of XAttributeAssertions.Be(XAttribute expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.BeXAttributeStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.Be(XAttribute expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.ConstructorXAttribute">
+            <summary>Sets the shim of XAttributeAssertions.XAttributeAssertions(XAttribute attribute)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.ContextGet">
+            <summary>Sets the shim of XAttributeAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.HaveValueString">
+            <summary>Sets the shim of XAttributeAssertions.HaveValue(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.HaveValueStringStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.HaveValue(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.NotBeXAttribute">
+            <summary>Sets the shim of XAttributeAssertions.NotBe(XAttribute unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXAttributeAssertions.NotBeXAttributeStringObjectArray">
+            <summary>Sets the shim of XAttributeAssertions.NotBe(XAttribute unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions">
+            <summary>Shim type of FluentAssertions.Xml.XDocumentAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.#ctor(FluentAssertions.Xml.XDocumentAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.BeEquivalentToXDocument">
+            <summary>Sets the shim of XDocumentAssertions.BeEquivalentTo(XDocument expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.BeEquivalentToXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.BeEquivalentTo(XDocument expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.BeXDocument">
+            <summary>Sets the shim of XDocumentAssertions.Be(XDocument expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.BeXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.Be(XDocument expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.ContextGet">
+            <summary>Sets the shim of XDocumentAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveElementString">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveElementXName">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveElementXNameStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveRootString">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveRootStringStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveRootXName">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.HaveRootXNameStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.NotBeEquivalentToXDocument">
+            <summary>Sets the shim of XDocumentAssertions.NotBeEquivalentTo(XDocument unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.NotBeEquivalentToXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.NotBeEquivalentTo(XDocument unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.NotBeXDocument">
+            <summary>Sets the shim of XDocumentAssertions.NotBe(XDocument unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.AllInstances.NotBeXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.NotBe(XDocument unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BeEquivalentToXDocument">
+            <summary>Sets the shim of XDocumentAssertions.BeEquivalentTo(XDocument expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BeEquivalentToXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.BeEquivalentTo(XDocument expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BeXDocument">
+            <summary>Sets the shim of XDocumentAssertions.Be(XDocument expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BeXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.Be(XDocument expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.ConstructorXDocument">
+            <summary>Sets the shim of XDocumentAssertions.XDocumentAssertions(XDocument document)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.ContextGet">
+            <summary>Sets the shim of XDocumentAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveElementString">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveElementXName">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveElementXNameStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveElement(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveRootString">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveRootStringStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveRootXName">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.HaveRootXNameStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.HaveRoot(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.NotBeEquivalentToXDocument">
+            <summary>Sets the shim of XDocumentAssertions.NotBeEquivalentTo(XDocument unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.NotBeEquivalentToXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.NotBeEquivalentTo(XDocument unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.NotBeXDocument">
+            <summary>Sets the shim of XDocumentAssertions.NotBe(XDocument unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXDocumentAssertions.NotBeXDocumentStringObjectArray">
+            <summary>Sets the shim of XDocumentAssertions.NotBe(XDocument unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXElementAssertions">
+            <summary>Shim type of FluentAssertions.Xml.XElementAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXElementAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXElementAssertions.#ctor(FluentAssertions.Xml.XElementAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.BeEquivalentToXElement">
+            <summary>Sets the shim of XElementAssertions.BeEquivalentTo(XElement expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.BeEquivalentToXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.BeEquivalentTo(XElement expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.BeXElement">
+            <summary>Sets the shim of XElementAssertions.Be(XElement expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.BeXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.Be(XElement expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.ContextGet">
+            <summary>Sets the shim of XElementAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveAttributeStringString">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(String expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveAttributeStringStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(String expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveAttributeXNameString">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(XName expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveAttributeXNameStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(XName expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveElementString">
+            <summary>Sets the shim of XElementAssertions.HaveElement(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveElement(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveElementXName">
+            <summary>Sets the shim of XElementAssertions.HaveElement(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveElementXNameStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveElement(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveValueString">
+            <summary>Sets the shim of XElementAssertions.HaveValue(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.HaveValueStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveValue(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.NotBeEquivalentToXElement">
+            <summary>Sets the shim of XElementAssertions.NotBeEquivalentTo(XElement unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.NotBeEquivalentToXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.NotBeEquivalentTo(XElement unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.NotBeXElement">
+            <summary>Sets the shim of XElementAssertions.NotBe(XElement unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.AllInstances.NotBeXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.NotBe(XElement unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BeEquivalentToXElement">
+            <summary>Sets the shim of XElementAssertions.BeEquivalentTo(XElement expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BeEquivalentToXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.BeEquivalentTo(XElement expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BeXElement">
+            <summary>Sets the shim of XElementAssertions.Be(XElement expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BeXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.Be(XElement expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXElementAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.ConstructorXElement">
+            <summary>Sets the shim of XElementAssertions.XElementAssertions(XElement xElement)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.ContextGet">
+            <summary>Sets the shim of XElementAssertions.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveAttributeStringString">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(String expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveAttributeStringStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(String expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveAttributeXNameString">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(XName expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveAttributeXNameStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveAttribute(XName expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveElementString">
+            <summary>Sets the shim of XElementAssertions.HaveElement(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveElement(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveElementXName">
+            <summary>Sets the shim of XElementAssertions.HaveElement(XName expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveElementXNameStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveElement(XName expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveValueString">
+            <summary>Sets the shim of XElementAssertions.HaveValue(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.HaveValueStringStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.HaveValue(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.NotBeEquivalentToXElement">
+            <summary>Sets the shim of XElementAssertions.NotBeEquivalentTo(XElement unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.NotBeEquivalentToXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.NotBeEquivalentTo(XElement unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.NotBeXElement">
+            <summary>Sets the shim of XElementAssertions.NotBe(XElement unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXElementAssertions.NotBeXElementStringObjectArray">
+            <summary>Sets the shim of XElementAssertions.NotBe(XElement unexpected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions">
+            <summary>Shim type of FluentAssertions.Xml.XmlElementAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.#ctor(FluentAssertions.Xml.XmlElementAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveAttributeStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttribute(String expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveAttributeStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttribute(String expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveAttributeWithNamespaceStringStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttributeWithNamespace(String expectedName, String expectedNamespace, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveAttributeWithNamespaceStringStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttributeWithNamespace(String expectedName, String expectedNamespace, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveElementString">
+            <summary>Sets the shim of XmlElementAssertions.HaveElement(String expectedName)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveElement(String expectedName, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveElementWithNamespaceStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveElementWithNamespace(String expectedName, String expectedNamespace)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveElementWithNamespaceStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveElementWithNamespace(String expectedName, String expectedNamespace, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveInnerTextString">
+            <summary>Sets the shim of XmlElementAssertions.HaveInnerText(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.AllInstances.HaveInnerTextStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveInnerText(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.ConstructorXmlElement">
+            <summary>Sets the shim of XmlElementAssertions.XmlElementAssertions(XmlElement xmlElement)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveAttributeStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttribute(String expectedName, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveAttributeStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttribute(String expectedName, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveAttributeWithNamespaceStringStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttributeWithNamespace(String expectedName, String expectedNamespace, String expectedValue)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveAttributeWithNamespaceStringStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveAttributeWithNamespace(String expectedName, String expectedNamespace, String expectedValue, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveElementString">
+            <summary>Sets the shim of XmlElementAssertions.HaveElement(String expectedName)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveElementStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveElement(String expectedName, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveElementWithNamespaceStringString">
+            <summary>Sets the shim of XmlElementAssertions.HaveElementWithNamespace(String expectedName, String expectedNamespace)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveElementWithNamespaceStringStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveElementWithNamespace(String expectedName, String expectedNamespace, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveInnerTextString">
+            <summary>Sets the shim of XmlElementAssertions.HaveInnerText(String expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlElementAssertions.HaveInnerTextStringStringObjectArray">
+            <summary>Sets the shim of XmlElementAssertions.HaveInnerText(String expected, String because, Object[] becauseArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions">
+            <summary>Shim type of FluentAssertions.Xml.XmlNodeAssertions</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.#ctor(FluentAssertions.Xml.XmlNodeAssertions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions.ConstructorXmlNode">
+            <summary>Sets the shim of XmlNodeAssertions.XmlNodeAssertions(XmlNode xmlNode)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2">
+            <summary>Shim type of FluentAssertions.Xml.XmlNodeAssertions`2</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.#ctor(FluentAssertions.Xml.XmlNodeAssertions{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances.BeEquivalentToXmlNode">
+            <summary>Sets the shim of XmlNodeAssertions`2.BeEquivalentTo(XmlNode expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances.BeEquivalentToXmlNodeStringObjectArray">
+            <summary>Sets the shim of XmlNodeAssertions`2.BeEquivalentTo(XmlNode expected, String because, Object[] reasonArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances.ContextGet">
+            <summary>Sets the shim of XmlNodeAssertions`2.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances.NotBeEquivalentToXmlNode">
+            <summary>Sets the shim of XmlNodeAssertions`2.NotBeEquivalentTo(XmlNode unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.AllInstances.NotBeEquivalentToXmlNodeStringObjectArray">
+            <summary>Sets the shim of XmlNodeAssertions`2.NotBeEquivalentTo(XmlNode unexpected, String because, Object[] reasonArgs)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.BeEquivalentToXmlNode">
+            <summary>Sets the shim of XmlNodeAssertions`2.BeEquivalentTo(XmlNode expected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.BeEquivalentToXmlNodeStringObjectArray">
+            <summary>Sets the shim of XmlNodeAssertions`2.BeEquivalentTo(XmlNode expected, String because, Object[] reasonArgs)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.ConstructorT0">
+            <summary>Sets the shim of XmlNodeAssertions`2.XmlNodeAssertions`2(!0 xmlNode)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.ContextGet">
+            <summary>Sets the shim of XmlNodeAssertions`2.get_Context()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.NotBeEquivalentToXmlNode">
+            <summary>Sets the shim of XmlNodeAssertions`2.NotBeEquivalentTo(XmlNode unexpected)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeAssertions`2.NotBeEquivalentToXmlNodeStringObjectArray">
+            <summary>Sets the shim of XmlNodeAssertions`2.NotBeEquivalentTo(XmlNode unexpected, String because, Object[] reasonArgs)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter">
+            <summary>Shim type of FluentAssertions.Xml.XmlNodeFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.#ctor(FluentAssertions.Xml.XmlNodeFormatter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.AllInstances.CanHandleObject">
+            <summary>Sets the shim of XmlNodeFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.AllInstances.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XmlNodeFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.Bind(FluentAssertions.Formatting.IValueFormatter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.CanHandleObject">
+            <summary>Sets the shim of XmlNodeFormatter.CanHandle(Object value)</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.Constructor">
+            <summary>Sets the shim of XmlNodeFormatter.XmlNodeFormatter()</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.ShimXmlNodeFormatter.ToStringObjectBooleanIListOfObjectInt32">
+            <summary>Sets the shim of XmlNodeFormatter.ToString(Object value, Boolean useLineBreaks, IList`1&lt;Object&gt; processedObjects, Int32 nestedPropertyLevel)</summary>
+        </member>
+        <member name="T:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter">
+            <summary>Stub type of FluentAssertions.Xml.XmlNodeFormatter</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter.InitializeStub">
+            <summary>Initializes a new instance of type StubXmlNodeFormatter</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentAssertions.Xml.Fakes.StubXmlNodeFormatter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
