@@ -15,6 +15,8 @@ Given there can be multiple applications/windows active in OpenFin Runtime, test
 
 Since the OpenFin Runtime is started by OpenFinRVM, Chromedriver does not have direct control of the OpenFin Runtime. OpenFin app needs to be started by the test code with SeleniumHelper.LaunchOpenFin(). Once a test is complete, it needs to shut down OpenFin Runtime by running javascript code "fin.desktop.System.exit();". driver.quit() does not shut down OpenFin Runtime since it does not have access.
 
+If tests are run with OpenFin Runtime version 5.x.x.x, a patched version of ChromeDriver is needed.  Execuable of the patched version is included in this repo as chromedriverOF.exe.  It can be selected to run this example by changing ChromeDriverFileName in App.config to chromedriverOF.exe.
+
 In Summary
 * Tests must target specific windows
 * OpenFin RunTime must be shut down after a test is completed
