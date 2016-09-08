@@ -17,14 +17,12 @@ namespace Structura.GuiTests
     public class OpenFinAppTests
     {
         private IWebDriver _driver;
-        private StringBuilder _verificationErrors;
 
         [OneTimeSetUp]
         public void SetupTest()
         {
             SeleniumHelper.LaunchOpenFin();
             _driver = new DriverFactory().Create();
-            _verificationErrors = new StringBuilder();
         }
 
         [OneTimeTearDown]
@@ -33,15 +31,15 @@ namespace Structura.GuiTests
             try
             {
                 _driver.executeJavascript("fin.desktop.System.exit();");  // ask OpenFin Runtime to exit
-                Thread.Sleep(3000);
+                Thread.Sleep(3000);  // gives Runtime time to exit
                 _driver.Quit();
                 _driver.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 // Ignore errors if we are unable to close the browser
+                Debug.WriteLine(ex.ToString());
             }
-            _verificationErrors.ToString().Should().BeEmpty("No verification errors are expected.");
         }
 
         [Test, Order(1)]
@@ -79,6 +77,18 @@ namespace Structura.GuiTests
                             "fin.desktop.Window.getCurrent().isShowing(function(data) { callback(data); } );");
             Assert.IsFalse((bool)response);
             _driver.SwitchWindow("Hello OpenFin").Should().BeTrue();
+        }
+
+        [Test, Order(5)]
+        [Ignore("")]
+        public void SVGComponent()
+        {
+            var ellipse = _driver.FindElement(By.Id("ellipse3"));
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].setAttribute(arguments[1], arguments[2])", ellipse, "style", "fill:red");
+            Thread.Sleep(5000);
+            var value = ellipse.GetAttribute("style");
+            Debug.WriteLine(value);
+            value.Should().Equals("fill:red");
         }
     }
 }

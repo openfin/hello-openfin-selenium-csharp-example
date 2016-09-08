@@ -15,8 +15,10 @@ namespace Tests.SeleniumHelpers
         /// <param name="windowTitle">title of the window.</param>
         public static bool SwitchWindow(this IWebDriver webDriver, string windowTitle)
         {
+            Debug.WriteLine("calling SwitchWindow for " + windowTitle);
             bool found = false;
-            long start = Stopwatch.GetTimestamp();
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
             while (!found) {
                 foreach (string name in webDriver.WindowHandles) {
                     try {
@@ -32,7 +34,7 @@ namespace Tests.SeleniumHelpers
                     }
                 }
                 Thread.Sleep(1000);
-                if ((Stopwatch.GetTimestamp() - start) > 5*1000) {
+                if (stopWatch.ElapsedMilliseconds > 20*1000) {
                     break;
                 }
             }

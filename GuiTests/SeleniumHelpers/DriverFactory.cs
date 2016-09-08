@@ -28,8 +28,6 @@ namespace Structura.GuiTests.SeleniumHelpers
             timeouts.ImplicitlyWait(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ImplicitlyWait")));
             timeouts.SetPageLoadTimeout(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("PageLoadTimeout")));
             timeouts.SetScriptTimeout(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ScriptTimeout")));
-            // Suppress the onbeforeunload event first. This prevents the application hanging on a dialog box that does not close.
-            ((IJavaScriptExecutor)driver).ExecuteScript("window.onbeforeunload = function(e){};");
             return driver;
         }
 
@@ -40,7 +38,12 @@ namespace Structura.GuiTests.SeleniumHelpers
         {
             var chromeOptions = new ChromeOptions();
             chromeOptions.DebuggerAddress = ConfigurationManager.AppSettings["DebuggerAddress"];
-            var chromeDriver = new ChromeDriver(chromeOptions);
+            var driverFileName = ConfigurationManager.AppSettings["ChromeDriverFileName"];
+            string exePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string exeDir = System.IO.Path.GetDirectoryName(exePath);
+            ChromeDriverService service = ChromeDriverService.CreateDefaultService(exeDir, driverFileName);
+            service.EnableVerboseLogging = false;
+            var chromeDriver = new ChromeDriver(service, chromeOptions);
             return chromeDriver;
         }
     }
