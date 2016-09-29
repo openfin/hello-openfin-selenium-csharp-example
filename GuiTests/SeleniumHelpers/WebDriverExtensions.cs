@@ -46,6 +46,59 @@ namespace Tests.SeleniumHelpers
         }
 
         /// <summary>
+        ///     Target a window by name.
+        /// </summary>
+        /// <param name="windowName">name of the window.</param>
+        public static bool SwitchWindowByName(this IWebDriver webDriver, string windowName)
+        {
+            Debug.WriteLine("calling SwitchWindowByName for " + windowName);
+            bool found = false;
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            while (!found)
+            {
+                foreach (string handle in webDriver.WindowHandles)
+                {
+                    try
+                    {
+                        webDriver.SwitchTo().Window(handle);
+                        string url = webDriver.Url;
+                        Debug.WriteLine("checking URL:" + url);
+                        if (url.StartsWith("http"))
+                        {
+                            Object response = executeAsyncJavascript(webDriver,
+                                    "var callback = arguments[arguments.length - 1];" +
+                                            "if (fin && fin.desktop && fin.desktop.Window) { callback(fin.desktop.Window.getCurrent().name);} else { callback('');};");
+                            Debug.WriteLine("window name " + response);
+                            if (response != null && response.ToString().Equals(windowName))
+                            {
+                                found = true;
+                                break;
+                            }
+                        }
+                    }
+                    catch (NoSuchWindowException wexp)
+                    {
+                        // some windows may get closed during Runtime startup
+                        // so may get this exception depending on timing
+                        Debug.WriteLine("Ignoring NoSuchWindowException " + handle);
+                    }
+                }
+                Thread.Sleep(1000);
+                if (stopWatch.ElapsedMilliseconds > 20 * 1000)
+                {
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Debug.WriteLine(windowName + " not found");
+            }
+            return found;
+        }
+
+        /// <summary>
         ///     Run some javascript code and expect a response.
         /// </summary>
         /// <param name="driver">instance of Web Driver.</param>
