@@ -1,14 +1,12 @@
-hello-openfin-selenium-csharp-example
-====================================
+# Hello OpenFin Selenium Csharp Example
 
+## Overview
 Example of C#.NET test code with Chrome Driver on OpenFin Runtime
 
 ## Source Code
-
 OpenFinAppTest.cs has sample code for testing HTML5 components and OpenFin javascript adapter in Hello OpenFin demo application.
 
-## Guidelines
-
+### Guidelines
 Since all HTML5 applications in the OpenFin environment need to be started with OpenFin API, chromeDriver.get(URL) is not supported. Test code needs to start HTML5 app before connecting to Chromedriver.
 
 Given there can be multiple applications/windows active in OpenFin Runtime, tests must begin by selecting the targeted window. Each test script has a function that selects the window by matching it's title.
@@ -21,15 +19,12 @@ In Summary
 * Tests must target specific windows
 * OpenFin RunTime must be shut down after a test is completed
 
-## Run the example
-
+## Run
 1. Install Hello OpenFin app from https://openfin.co/demos/
-
 2. Clone this project and load and build it in VisualStudio 2015
-
 3. Run all tests in TEST->RUN->All Tests in VisualStudio 2015
 
-## Getting help
-
-Please contact support@openfin.co
+## Support
+Please enter an issue in the repo for any questions or problems. 
+<br> Alternatively, please contact us at support@openfin.co
 
