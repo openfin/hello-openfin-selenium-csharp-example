@@ -24,10 +24,9 @@ namespace Structura.GuiTests.SeleniumHelpers
 
             //driver.Manage().Window.Maximize();
             var timeouts = driver.Manage().Timeouts();
-
-            timeouts.ImplicitlyWait(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ImplicitlyWait")));
-            timeouts.SetPageLoadTimeout(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("PageLoadTimeout")));
-            timeouts.SetScriptTimeout(TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ScriptTimeout")));
+            timeouts.ImplicitWait = TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ImplicitlyWait"));
+            timeouts.PageLoad     = TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("PageLoadTimeout"));
+            timeouts.AsynchronousJavaScript = TimeSpan.FromSeconds(ConfigurationHelper.Get<int>("ScriptTimeout"));
             return driver;
         }
 
@@ -42,7 +41,7 @@ namespace Structura.GuiTests.SeleniumHelpers
             string exePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string exeDir = System.IO.Path.GetDirectoryName(exePath);
             ChromeDriverService service = ChromeDriverService.CreateDefaultService(exeDir, driverFileName);
-            service.EnableVerboseLogging = false;
+            service.EnableVerboseLogging = true;
             var chromeDriver = new ChromeDriver(service, chromeOptions);
             return chromeDriver;
         }
