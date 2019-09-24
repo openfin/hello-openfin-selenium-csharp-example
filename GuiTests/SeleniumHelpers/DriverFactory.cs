@@ -42,6 +42,11 @@ namespace Structura.GuiTests.SeleniumHelpers
             string exeDir = System.IO.Path.GetDirectoryName(exePath);
             ChromeDriverService service = ChromeDriverService.CreateDefaultService(exeDir, driverFileName);
             service.EnableVerboseLogging = true;
+            string logfile = ConfigurationManager.AppSettings["ChromeDriverLogFile"];
+            if (logfile != null)
+            {
+                service.LogPath = ConfigurationManager.AppSettings["ChromeDriverLogFile"];
+            }
             var chromeDriver = new ChromeDriver(service, chromeOptions);
             return chromeDriver;
         }
